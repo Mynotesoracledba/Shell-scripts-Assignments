@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Enter the file path and file name "
+
+read file_path
+
+no_lines=`wc -l < $file_path`
+no_words=`wc -w < $file_path`
+
+echo "number of line present in file $no_lines"
+echo "number of words present in file $no_words"
